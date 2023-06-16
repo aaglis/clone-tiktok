@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./video.css";
+import VideoFooter from "./components/footer/VideoFooter";
 
 function Video() {
   const videoRef = useRef(null);
@@ -24,8 +25,11 @@ function Video() {
         ref={videoRef}
         onClick={handdleStart}
         loop
-        src="https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/brecker2.mp4?t=2023-05-22T19%3A37%3A45.885Z"
-      ></video>
+        src="https://cdn-user.veed.io/render/e60b2f65-e714-4853-af7c-69a3281eee71.mp4#t=0.001">
+
+      </video>
+      {/*Side Bar*/}
+      <VideoFooter />
     </div>
   );
 }

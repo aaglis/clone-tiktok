@@ -4,7 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
-
+README.md
+public/maloka pop.mp4
 # testing
 /coverage
 
