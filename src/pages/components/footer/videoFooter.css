@@ -1,6 +1,6 @@
 .video-footer {
   position: relative;
-  bottom: 20%;
+  bottom: 22%;
   margin-left: 30px;
   color: white;
 }
@@ -15,7 +15,7 @@
 }
 
 .video-footer-music-text {
-  width: 80%;
+  width: 75%;
   overflow-x: hidden;
 }
 .video-footer-music-text p {

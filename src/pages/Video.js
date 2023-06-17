@@ -1,8 +1,10 @@
 import React, { useRef, useState } from "react";
 import "./video.css";
+import Header from "./components/header/Header";
 import VideoFooter from "./components/footer/VideoFooter";
+import VideoSidebar from "./components/side bar/VideoSidebar";
 
-function Video() {
+function Video({likes, messages, saves, shares, nameAccount, description, musicName, url}) {
   const videoRef = useRef(null);
   const [videoState, setPlay] = useState(false);
 
@@ -19,17 +21,27 @@ function Video() {
 
   return (
     <div className="container-video">
+      <Header />
       <video
         className="video-player"
         // controls
         ref={videoRef}
         onClick={handdleStart}
         loop
-        src="https://cdn-user.veed.io/render/e60b2f65-e714-4853-af7c-69a3281eee71.mp4#t=0.001">
+        src={url}>
 
       </video>
-      {/*Side Bar*/}
-      <VideoFooter />
+      <VideoSidebar 
+        likes = {likes}
+        messages = {messages}
+        saves = {saves}
+        shares = {shares}
+        />
+      <VideoFooter
+        nameAccount = {nameAccount}
+        description = {description}
+        musicName = {musicName}
+      />
     </div>
   );
 }

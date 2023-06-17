@@ -71,3 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 https://cdn-user.veed.io/render/ced51dc8-f2d1-42ec-bcd7-3a243fd37da4.mp4#t=0.001 //video do gatinho fofo
+https://cdn-user.veed.io/render/e60b2f65-e714-4853-af7c-69a3281eee71.mp4#t=0.001 // video do maloka dançando funk ao som de pop

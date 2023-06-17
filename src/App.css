@@ -11,9 +11,9 @@ html {
 
 .container-app {
   height: 100vh;
-  max-height: 800px;
+  max-height: 665px;
   width: 80%;
-  max-width: 500px;
+  max-width: 375px;
   border: 1px solid black;
   border-radius: 20px;
   overflow: scroll;
