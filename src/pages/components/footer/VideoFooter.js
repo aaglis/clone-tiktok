@@ -1,6 +1,7 @@
-import React from 'react'
-import './videoFooter.css'
+import React from 'react';
+import './videoFooter.css';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
+
 
 function VideoFooter({nameAccount, description, musicName}) {
   return (

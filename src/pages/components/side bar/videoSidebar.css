@@ -6,6 +6,10 @@
 }
 
 .video-side-bar-options {
-  padding: 10px 20px;
+  padding: 7px 10px;
   text-align: center;
+}
+
+.userAvatar {
+  border: 1.5px solid white;
 }

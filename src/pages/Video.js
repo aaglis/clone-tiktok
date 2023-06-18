@@ -4,7 +4,7 @@ import Header from "./components/header/Header";
 import VideoFooter from "./components/footer/VideoFooter";
 import VideoSidebar from "./components/side bar/VideoSidebar";
 
-function Video({likes, messages, saves, shares, nameAccount, description, musicName, url}) {
+function Video({likes, messages, saves, shares, avatar, nameAccount, description, musicName, url}) {
   const videoRef = useRef(null);
   const [videoState, setPlay] = useState(false);
 
@@ -32,6 +32,7 @@ function Video({likes, messages, saves, shares, nameAccount, description, musicN
 
       </video>
       <VideoSidebar 
+        avatar = {avatar}
         likes = {likes}
         messages = {messages}
         saves = {saves}
