@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import "./video.css";
-import Header from "./components/header/Header";
 import VideoFooter from "./components/footer/VideoFooter";
 import VideoSidebar from "./components/side bar/VideoSidebar";
 
@@ -21,7 +20,6 @@ function Video({likes, messages, saves, shares, avatar, nameAccount, description
 
   return (
     <div className="container-video">
-      <Header />
       <video
         className="video-player"
         // controls

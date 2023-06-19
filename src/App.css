@@ -31,3 +31,34 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+/*HEADER*/
+.video-header {
+  position: fixed;
+  z-index: 999;
+  padding-top: 14px;
+  left: 50%;
+  margin-left: -45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+.video-header p {
+  color: white;
+  font-weight: bold;
+}
+
+.video-header span {
+  margin-top: 1px;
+  width: 42%;
+  border-radius: 7px;
+  border-top: 3px solid white;
+}
+
+
+
+@media only screen and (max-width:460px) {
+  .container-app {
+    width: 100%;
+    height: 100vh;
+  }
+}

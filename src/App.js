@@ -5,7 +5,7 @@ import db from "./config/firebase";
 import { collection, getDocs } from "firebase/firestore/lite";
 
 function App() {
-
+  
   const [video, setVideos] = useState([]);
 
   async function getVideos() {
@@ -23,9 +23,15 @@ function App() {
   return (
     <div className="App">
       <div className="container-app">
+        <div className='video-header'>
+          <p>Para você</p>
+          <span></span>
+        </div>
+
         {video.map((item) => {
           return (
             <Video
+            className= "video"
             avatar={item.avatar}
             likes={item.likes}
             messages={item.messages}

@@ -52,3 +52,14 @@
     transform: translateX(-100%);
   }
 }
+
+@media only screen and (max-width:350px) {
+  .video-footer {
+    bottom: 25px;
+  }
+
+  .video-footer-music-text {
+    width: 74%;
+  }
+
+}

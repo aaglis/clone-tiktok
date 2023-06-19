@@ -7,7 +7,14 @@
 }
 
 .video-player {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  object-fit:cover
+}
+
+@media only screen and (max-width:375px) {
+  .video-player {
+    display: block;
+    margin: auto 0;
+  }
 }
