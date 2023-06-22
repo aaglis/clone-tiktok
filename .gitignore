@@ -10,6 +10,9 @@ public/maloka pop.mp4
 
 # production
 /build
+/.firebase
+/config/firebase.js
+.firebaserc
 
 # misc
 .DS_Store

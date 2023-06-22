@@ -6,7 +6,7 @@ import ChatIcon from "@mui/icons-material/Chat";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import ReplyIcon from "@mui/icons-material/Reply";
 import { yellow } from "@mui/material/colors";
-import { Stack, Avatar } from "@mui/material";
+import { Stack , Avatar } from "@mui/material";
 
 function VideoSidebar({ avatar, likes, messages, saves, shares }) {
   const [liked, setLiked] = useState(false);

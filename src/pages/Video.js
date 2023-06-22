@@ -1,34 +1,55 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
+import ReactVisibilitySensor from "react-visibility-sensor";
 import "./video.css";
 import VideoFooter from "./components/footer/VideoFooter";
 import VideoSidebar from "./components/side bar/VideoSidebar";
 
-function Video({likes, messages, saves, shares, avatar, nameAccount, description, musicName, url}) {
+function Video({likes, messages, saves, shares, avatar, nameAccount, description, musicName, url, index }) {
   const videoRef = useRef(null);
-  const [videoState, setPlay] = useState(false);
+  const [videoState, setPlay] = useState(true);
 
   function handdleStart() {
     //  definindo o estado do video, de acordo com o clique do usuário
-    if (!videoState) {
-      videoRef.current.play();
-      setPlay(true);
-    } else {
+    if (videoState) {
       videoRef.current.pause();
       setPlay(false);
+      console.log("o video será pausado(mudando o setPlay para falso")
+    } else {
+      videoRef.current.play();
+      setPlay(true);
+      console.log("o video será iniciado!(mudando o setPlay para verdadeiro!")
     }
   }
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (isVisible) {
+      videoRef.current.play();
+      console.log(index)
+      setPlay(true)
+    }
+    else {
+      if (videoRef.current.play) {
+        videoRef.current.pause();
+        setPlay(false)
+      }
+    }
+  }, [isVisible]);
+
   return (
     <div className="container-video">
+      <ReactVisibilitySensor onChange={(isVisible) => setIsVisible(isVisible)}>
       <video
         className="video-player"
-        // controls
+        controls = {false}
         ref={videoRef}
         onClick={handdleStart}
         loop
+        playsInline
         src={url}>
-
       </video>
+      </ReactVisibilitySensor>
       <VideoSidebar 
         avatar = {avatar}
         likes = {likes}

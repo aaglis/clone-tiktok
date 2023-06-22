@@ -4,6 +4,7 @@
   width: 100%;
   scroll-snap-align: start;
   position: relative;
+  overflow: hidden;
 }
 
 .video-player {
@@ -12,9 +13,6 @@
   object-fit:cover
 }
 
-@media only screen and (max-width:375px) {
-  .video-player {
-    display: block;
-    margin: auto 0;
-  }
+.video-player::-webkit-media-controls {
+  display: none;
 }

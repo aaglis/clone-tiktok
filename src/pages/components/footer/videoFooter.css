@@ -6,10 +6,10 @@
 }
 
 .video-footer-text h3 {
-  padding-bottom: 10px;
+  padding-top: 10px;
 }
 .video-footer-text p {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .video-footer-music {
@@ -27,7 +27,7 @@
 .video-footer-record {
   animation: spinTheRecord 4s infinite linear;
   position: absolute;
-  bottom: 5px;
+  bottom: -5px;
   right: 20px;
   height: 50px;
   filter: invert(1); /*inverte as cores*/

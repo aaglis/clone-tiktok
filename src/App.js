@@ -41,6 +41,7 @@ function App() {
             description={item.description}
             musicName={item.musicName}
             url={item.url}
+            index={item.index}
             />
           );
         })}
