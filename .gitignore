@@ -10,7 +10,7 @@ public/maloka pop.mp4
 
 # production
 /build
-/.firebase
+.firebase
 /config/firebase.js
 .firebaserc
 
