@@ -6,18 +6,18 @@ import VideoSidebar from "./components/side bar/VideoSidebar";
 
 function Video({likes, messages, saves, shares, avatar, nameAccount, description, musicName, url, index }) {
   const videoRef = useRef(null);
-  const [videoState, setPlay] = useState(true);
+  const [videoState, setPlay] = useState(false);
 
   function handdleStart() {
     //  definindo o estado do video, de acordo com o clique do usuário
-    if (videoState) {
-      videoRef.current.pause();
-      setPlay(false);
-      console.log("o video será pausado(mudando o setPlay para falso")
-    } else {
+    if (!videoState) {
+      console.log("o video será iniciado!(mudando o setPlay para verdadeiro!")
       videoRef.current.play();
       setPlay(true);
-      console.log("o video será iniciado!(mudando o setPlay para verdadeiro!")
+    } else {
+      console.log("o video será pausado(mudando o setPlay para falso")
+      videoRef.current.pause();
+      setPlay(false);
     }
   }
 
