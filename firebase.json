@@ -12,5 +12,9 @@
         "destination": "/index.html"
       }
     ]
+  },
+  "firestore": {
+    "rules": "firebaserules.rules",
+    "indexes": "firestore.indexes.json"
   }
 }
